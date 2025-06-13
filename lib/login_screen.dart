@@ -22,6 +22,41 @@ class LoginScreen extends StatelessWidget {
             TextFormField(decoration: inputDecorationStyle(
                 "password", "Password", Icon(Icons.lock,color: Colors.brown,),
                  Icon(Icons.visibility,color: Colors.blue,)),),
+            SizedBox(height: 15,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Text("Forgot Password?",style: TextStyle(color: Colors.blue,fontSize: 15),),
+              ],
+            ),
+            SizedBox(height: 15,),
+
+            SizedBox(
+              height: 40,
+              child: TextButton(onPressed: (){},style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blue,
+                foregroundColor: Colors.white,
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15))
+              ), child: Center(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                  Icon(Icons.arrow_forward),
+                    SizedBox(width: 4,),
+                  Text("Login")
+                ],),
+              ),),
+            ),
+            SizedBox(height: 25,),
+            Center(
+              child: RichText(text: TextSpan(
+                text: "Don't have an account?",
+                children: [
+                  TextSpan(text:"  Sign up",style: TextStyle(color: Colors.blue))
+                ]
+              ),
+              ),
+            )
         ],),
       ),
     );
