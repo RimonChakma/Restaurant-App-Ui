@@ -7,13 +7,20 @@ InputDecoration inputDecorationStyle (
     [Widget? suffixIcon]
     ) {
   return InputDecoration(
-    focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.brown)
-        ,borderRadius: BorderRadius.circular(12)),
-    enabledBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.brown),
+    border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
+
+    focusedBorder: OutlineInputBorder(
+        borderSide: BorderSide(color: Colors.brown),
         borderRadius: BorderRadius.circular(12)),
+
+    enabledBorder: OutlineInputBorder(
+        borderSide: BorderSide(color: Colors.brown),
+        borderRadius: BorderRadius.circular(12)),
+
     labelText: labelText,
     hintText: hintText,
     prefixIcon: prefixIcon,
     suffixIcon: suffixIcon,
+    contentPadding: EdgeInsets.symmetric(vertical: 10, horizontal: 10)
   );
 }
