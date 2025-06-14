@@ -16,12 +16,19 @@ class LoginScreen extends StatelessWidget {
           Text("Login to your account",style: TextStyle(fontSize: 15,color: Colors.brown),),
             SizedBox(height: 25,),
 
-            TextFormField(decoration: inputDecorationStyle(
-                "email", "email or username", Icon(Icons.person,color: Colors.brown,))),
+            SizedBox(
+              height: 40,
+              child: TextFormField(decoration: inputDecorationStyle(
+                  "email", "email or username", Icon(Icons.person,color: Colors.brown,))),
+            ),
             SizedBox(height: 10,),
-            TextFormField(decoration: inputDecorationStyle(
-                "password", "Password", Icon(Icons.lock,color: Colors.brown,),
-                 Icon(Icons.visibility,color: Colors.blue,)),),
+            SizedBox(
+              height: 40,
+              child: TextFormField(decoration: inputDecorationStyle(
+                  "password", "Password", Icon(Icons.lock,color: Colors.brown,),
+                   Icon(Icons.visibility,color: Colors.blue,)),),
+            ),
+
             SizedBox(height: 15,),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
