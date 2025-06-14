@@ -21,6 +21,33 @@ class SignupScreen extends StatelessWidget {
         SizedBox(height: 10,),
         Text("Create your Account",style: TextStyle(color: Colors.blue,fontSize: 22),),
         SizedBox(height: 10,),
+        Row(
+          children: [
+            Expanded(
+                flex: 2,
+                child: TextFormField(
+                  decoration: inputDecorationStyle(
+                      "First Name", "First Name", Icon(Icons.person)),)),
+            SizedBox(height: 5,),
+            Expanded(
+                flex: 2,
+                child: TextFormField(
+                  decoration: inputDecorationStyle(
+                      "Last Name", "Last Name", Icon(Icons.person)),)),
+          ],
+        ),
+
+        SizedBox(height: 5,),
+        TextFormField(decoration: inputDecorationStyle(
+            "Username", "username", Icon(Icons.alternate_email)),),
+        SizedBox(height: 5,),
+        TextFormField(decoration: inputDecorationStyle(
+            "Email", "email", Icon(Icons.email)),),
+        TextFormField(decoration: inputDecorationStyle(
+            "Mobile Number", "mobile number", Icon(Icons.phone)),),
+        SizedBox(height: 5,),
+        TextFormField(decoration: inputDecorationStyle(
+            "lock", "lock", Icon(Icons.lock),Icon(Icons.visibility,color: Colors.blue,)),),
 
       ],),),
     );
