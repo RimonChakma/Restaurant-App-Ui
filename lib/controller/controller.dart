@@ -13,3 +13,24 @@ class LoginController extends GetxController{
     }
   }
 }
+
+class SwitchController extends GetxController{
+  final switch1 = false.obs;
+  final switch2 = false.obs;
+
+  onSwitch1(){
+    switch1.value = !switch1.value;
+  }
+
+  onSwitch2 () {
+    switch2.value = !switch2.value;
+  }
+}
+
+class DropDownController extends GetxController{
+  final selectValue = "connect 1".obs;
+
+  updateValue(String newValue){
+    selectValue.value = newValue;
+  }
+}
